@@ -23,21 +23,40 @@ function App() {
         </div>
       </div>
       <div className="body-content-div">
-        <div className="body-div">learning</div>
-        <div className="body-div">
-          <p>Products</p>
-
+        <div className="body-div-left">learning</div>
+        <div className="body-div-center">
+          <p className="pruduct-p">Products</p>
+          <br/>
+          <p>Car</p>
           <div className="product-slider">
             <div className="product-card">Product 1</div>
             <div className="product-card">Product 2</div>
             <div className="product-card">Product 3</div>
             <div className="product-card">Product 4</div>
-            <div className="product-card">Product 5</div>
+         
+          </div>
+          <br />
+          <p>Electronic</p>
+             <div className="product-slider">
+            <div className="product-card">Product 1</div>
+            <div className="product-card">Product 2</div>
+            <div className="product-card">Product 3</div>
+            <div className="product-card">Product 4</div>
+          </div>
+          <br />
+          <p>Food</p>
+             <div className="product-slider">
+            <div className="product-card">Product 1</div>
+            <div className="product-card">Product 2</div>
+            <div className="product-card">Product 3</div>
+            <div className="product-card">Product 4</div>
           </div>
         </div>
-        <div className="body-div">Stores</div>
+        <div className="body-div-right">Stores
+          
+        </div>
       </div>
-      <div>About </div>
+     
     </div>
   );
 }
