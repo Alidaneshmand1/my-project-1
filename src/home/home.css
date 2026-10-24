@@ -1,17 +1,21 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: rgb(55, 55, 55);
-  color: rgb(184, 183, 183);
   text-align: center;
   font-size: 2.4vw;
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   direction: ltr;
+
+}
+.body{
+   background-color: rgb(55, 55, 55);
+  color: rgb(184, 183, 183);
 }
 .header-main {
   display: flex;
+  
 }
 .header-left {
   flex: 1;
@@ -86,17 +90,23 @@
 }
 .search-bar {
   text-size-adjust: 400px;
-  border: 1px rgb(92, 92, 91) solid;
+  border: 0.1vw rgb(92, 92, 91) solid;
   border-radius: 2vw;
-  height: clamp(40px, 4vw, 50px);
-  width: clamp(500px, 60vw, 2000px);
+  height: clamp(30px, 4vw, 50px);
+  width: clamp(300px, 60vw, 2000px);
+  transition: 0.2s;
+  background-color: rgb(55, 55, 55);
+  color: rgb(184, 183, 183);
+
 }
 .search-bar::placeholder {
   font-size: clamp(20px, 2vw, 50px);
+
 }
 .search-bar:focus {
   outline: none;
   border: 0.02vw rgba(160, 124, 3, 0.664) solid;
+      background-color: rgb(58, 58, 58);
 }
 
 .product-slider {
@@ -118,16 +128,31 @@
   object-fit: cover;
   border-radius: 20%;
   color: rgb(248, 248, 248);
-    transition: 0.2s;
+  transition: 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 0.2vw rgb(119, 108, 78) solid;
 }
-.product-card:hover{
-    width: 22vw;
+.product-card:hover {
+  width: 22vw;
   height: 22vw;
   cursor: pointer;
-  border: 1vw rgb(39, 39, 39) solid;
+  border: 0.5vw rgb(28, 28, 28) solid;
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.531);
 }
-.product-card-div:hover{
+/* .product-card-div:hover{
   
+} */
+.all-link {
+  text-decoration: none;
+}
+.products-card-p {
+  padding-top: 0px;
+  color: rgba(164, 153, 98, 0.963);
+  transition: 0.2s;
+}
+.products-card-p:hover {
+  cursor: pointer;
+  color: rgb(159, 158, 158);
 }
 .stores-card-div {
   display: flex;
@@ -137,30 +162,35 @@
   padding: 1vw;
   width: 100%;
 }
-.products-card-p {
-  padding-top: 0px;
-  color: rgb(242, 240, 240);
-  transition: 0.2s;
-}
-.products-card-p:hover{
-  font-size: 120%;
-  cursor: pointer;
-}
 .stores-card {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 11vw;
   height: 11vw;
-  padding: 2vw;
+  margin: 1vw;
   object-fit: cover;
   border-radius: 3vw;
-  padding-bottom: 2vw;
+  margin-bottom: 2vw;
+  transition: 0.2s;
+  border: 0.2vw rgb(119, 108, 78) solid;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.stores-card:hover {
+  width: 12vw;
+  height: 12vw;
+  cursor: pointer;
+  border: 0.5vw rgb(39, 39, 39) solid;
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.6);
 }
 .store-card-text {
   padding-top: 0px;
-  color: rgb(248, 248, 248);
+  color: rgba(164, 153, 98, 0.963);
+  transition: 0.2s;
 }
-
+.store-card-text:hover {
+  cursor: pointer;
+  color: rgb(159, 158, 158);
+}
 .learning-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,16 +207,35 @@
   background-color: rgba(101, 101, 101, 0.19);
   border-radius: 1vw;
   color: rgba(164, 153, 98, 0.963);
+  transition: 0.2s;
+  border: 0.2vw rgb(119, 108, 78) solid;
+}
+.learning-item:hover {
+  border: 0.5vw rgb(39, 39, 39) solid;
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: rgb(159, 158, 158);
 }
 .down-page {
   border-top: 0.02vw rgba(160, 124, 3, 0.664) solid;
   margin: 1vw;
+  margin-bottom: 0;
 }
 .down-content {
   display: flex;
 }
 .down {
   flex: 1;
+}
+.icons{ 
+  transition: 0.2s;
+  background-color: rgb(55, 55, 55);
+  color: rgb(184, 183, 183);
+}
+.icons:hover{
+  
+  font-size: 130%;
+
 }
 /* .store-item {
   border: 0.02vw rgb(0, 0, 0) solid;
