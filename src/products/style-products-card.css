@@ -1,0 +1,45 @@
+.style-products-card {
+  width: 15vw;
+  height: 25vw;
+  margin: 100px;
+  border: 1px rgb(206, 205, 205) solid;
+  border-radius: 1vw;
+  align-items: center;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.style-products-card:hover{
+cursor: pointer;
+}
+.img-products-card {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+.card-body {
+  width: 15vw;
+  height: 10vw;
+}
+.card-text-top {
+    margin-top: 0.3vw;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.card-text-descirption {
+  font-size: 1vw;
+}
+.buy-text-card {
+  font-size: 1vw;
+}
+.card-body {
+  padding: 0;
+}
+.div-all-card{
+    display: grid;
+    grid-template-columns: a;
+}
