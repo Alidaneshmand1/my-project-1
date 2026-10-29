@@ -1,3 +1,4 @@
+import { faDove } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
 function ProductsCar() {
@@ -21,10 +22,10 @@ function ProductsCar() {
   useEffect(() => {
     loadProducts();
   }, []);
-  return products.map((product) => {
-    return (
-      <div className="div-all-card">
-        <div className="style-products-card">
+ return( <div className="div-all-card">
+    {products.map((product) => {
+      return (
+        <div key={product.id} className="style-products-card">
           <img
             src="/src/picture/products/1.jpg"
             className="img-products-card"
@@ -38,9 +39,10 @@ function ProductsCar() {
             </p>
           </div>
         </div>
-      </div>
-    );
-  });
+      );
+    })}
+  </div>
+ )
 }
 
 export default ProductsCar;

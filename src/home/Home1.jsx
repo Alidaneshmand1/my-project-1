@@ -19,7 +19,9 @@ const Home = () => {
           <input className="search-bar" placeholder="Serach..." type="text" />
         </div>
         <div className="header-right">
+          
           <FontAwesomeIcon className="icons" icon={faCartShopping} />
+  
         </div>
       </div>
       <div className="body-content-div">

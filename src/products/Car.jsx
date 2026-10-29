@@ -1,31 +1,32 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faCartShopping,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+
+
 import Products from "./Products-car";
 function Car() {
   return (
     <div>
-      <div className="nav-bar">
-        <ul className="nav nav-pills">
-  <li className="nav-item">
-    <a className="nav-link" aria-current="page" href="#"></a>
-  </li>
-  <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><FontAwesomeIcon icon={faBars} /></a>
-    <ul className="dropdown-menu">
-      <li><a className="dropdown-item" href="#">Action</a></li>
-      <li><a className="dropdown-item" href="#">Another action</a></li>
-      <li><a className="dropdown-item" href="#">Something else here</a></li>
-      <li><hr className="dropdown-divider"/></li>
-      <li><a className="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#">Link</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+      <div className="nav">
+        <div className="left-nav">
+         
+            <FontAwesomeIcon className="icons-nav" icon={faUser} />
+
+         
+            <FontAwesomeIcon className="icons-nav" icon={faCartShopping} />
+     
+        </div>
+    <div className="center-nav"> <div className="headaer-center">
+          <input className="search-bar-products" placeholder="Serach..." type="text" />
+        </div></div>
+        <div className="right-nav">
+    
+            <FontAwesomeIcon className="icons-nav" icon={faBars} />
+
+        </div>
       </div>
       <div
         id="carouselExampleCaptions"
@@ -61,36 +62,36 @@ function Car() {
           <div className="carousel-item active">
             <img
               src="/src/picture/products/1.jpg"
-              className="img-header-slider d-block w-100"
+              className="img-header-slider d-block"
               alt="Car 1"
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide</h5>
-              <p>First car image</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
 
           <div className="carousel-item">
             <img
               src="/src/picture/products/2.jpg"
-              className="img-header-slider d-block w-100"
+              className="img-header-slider d-block"
               alt="Car 2"
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide</h5>
-              <p>Second car image</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
 
           <div className="carousel-item">
             <img
               src="/src/picture/products/3.jpg"
-              className="img-header-slider d-block w-100"
+              className="img-header-slider d-block"
               alt="Car 3"
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide</h5>
-              <p>Third car image</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
         </div>
