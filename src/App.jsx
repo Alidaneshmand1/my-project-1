@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home/Home1";
 import Log from "./login/Login";
 import Car from './products/Car'
+import Buy from "./buy/Buy";
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Log/>}></Route>
         <Route path="/Car" element={<Car/>}></Route>
+        <Route path="/buy " element={<Buy/>}></Route>
       </Routes>
     </BrowserRouter>
   );

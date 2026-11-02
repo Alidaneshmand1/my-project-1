@@ -1,31 +1,43 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { BrowserRouter, Routes, Route, Link, Router } from "react-router-dom";
+import "./Products-car";
 import {
   faBars,
   faCartShopping,
+  faSearch,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 import Products from "./Products-car";
 function Car() {
+  const [searchvalue, setsearchvalue] = useState("");
+
   return (
     <div>
       <div className="nav">
         <div className="left-nav">
-         
-            <FontAwesomeIcon className="icons-nav" icon={faUser} />
+          <FontAwesomeIcon className="icons-nav" icon={faUser} />
 
-         
+          <Link to= "/buy">
+            {" "}
             <FontAwesomeIcon className="icons-nav" icon={faCartShopping} />
-     
+          </Link>
         </div>
-    <div className="center-nav"> <div className="headaer-center">
-          <input className="search-bar-products" placeholder="Serach..." type="text" />
-        </div></div>
+        <div className="center-nav">
+          {" "}
+          <div className="headaer-center">
+            <input
+              className="search-bar-products"
+              placeholder="Serach..."
+              type="text"
+              onChange={(response) => setsearchvalue(response.target.value)}
+              value={searchvalue}
+            />
+          </div>
+        </div>
         <div className="right-nav">
-    
-            <FontAwesomeIcon className="icons-nav" icon={faBars} />
-
+          <FontAwesomeIcon className="icons-nav" icon={faBars} />
         </div>
       </div>
       <div
@@ -122,7 +134,7 @@ function Car() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <Products></Products>
+      <Products searchipmort={searchvalue}></Products>
     </div>
   );
 }
