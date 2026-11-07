@@ -12,7 +12,7 @@ function ProductsCar(props) {
     });
   const [products, setproducts] = useState([]);
   function loadProducts() {
-    fetch("http://localhost/shop-api/products.php")
+    fetch("http://localhost:3000/products")
       .then((response) => {
         return response.json();
       })
@@ -42,8 +42,8 @@ console.log("Products:", products);
             />
             <div className="card-body">
               <h1 className="card-text-top">{product.name}</h1>
-              <p className="card-text-descirption">{product.description}</p>
-              <p href="#" className="buy-text-card">
+              <p className="filter">food</p>
+              <p href="#" className="price-text">
                 {product.price}
               </p>
             </div>

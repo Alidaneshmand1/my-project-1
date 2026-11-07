@@ -17,9 +17,9 @@ function Car() {
     <div>
       <div className="nav">
         <div className="left-nav">
-          <FontAwesomeIcon className="icons-nav" icon={faUser} />
+          <Link className="all-link" to="/login"><FontAwesomeIcon className="icons-nav" icon={faUser} /></Link>
 
-          <Link to= "/buy">
+          <Link to= "/buy" className="all-link">
             {" "}
             <FontAwesomeIcon className="icons-nav" icon={faCartShopping} />
           </Link>

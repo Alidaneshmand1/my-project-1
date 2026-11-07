@@ -1,7 +1,70 @@
-.text{
-    font-size: 2vw;
-    margin-bottom: 0;
+.text {
+  font-size: 2vw;
+  margin-bottom: 0;
+  margin-top: 3vw;
+  text-align: left;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
 }
-.input{
-
+.input {
+  width: 30vw;
+  height: 3vw;
+  border-radius: 1.5vw;
+  outline: none;
+  border: 0.2vw rgb(80, 78, 78) solid;
+  background-color: rgb(55, 55, 55);
+  color: rgb(185, 185, 185);
+  transition: 0.2s;
+}
+.input:hover {
+  background-color: rgb(79, 79, 79);
+}
+.input:focus {
+  border: 0.2vw rgb(20, 20, 20) solid;
+  box-shadow: 0 10px 6px rgb(26, 26, 26);
+}
+.div-login {
+  background-color: rgb(87, 87, 87);
+  height: 100vh;
+  border-radius: 10vw;
+  margin: auto 30vw;
+  padding-top: 5vw;
+}
+.button-login {
+  margin-top: 0;
+  width: 9vw;
+  height: 3vw;
+  align-items: center;
+  font-size: 2vw;
+  border-radius: 1.5vw;
+  background-color: rgb(155, 155, 155);
+  outline: none;
+  border: 0.2vw rgb(23, 23, 23) solid;
+  transition: 0.2s;
+  margin-top: 2vw;
+}
+.button-login:hover {
+  background-color: rgb(107, 106, 106);
+  box-shadow: 0 10px 6px rgb(26, 26, 26);
+}
+.button-login:active {
+  background-color: rgb(78, 77, 77);
+}
+.links-div {
+  display: flex;
+  margin-top: 2vw;
+  margin-left: 7vw;
+}
+.link-text {
+  color: rgb(6, 6, 98);
+  font-size: 1.9vw;
+  font-weight: 400;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+.error-text {
+  font-size: 2vw;
+  color: rgb(109, 3, 3);
 }

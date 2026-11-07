@@ -1,0 +1,39 @@
+.main-buy-div{
+    background-color: rgb(74, 76, 76);
+    width: 80vw;
+    height: 100vh;
+    margin: auto 10vw;
+    display: flex;
+}
+.pay-div{
+    background-color: rgb(123, 123, 123);
+width: 30vw;
+}
+.cart-div{
+width: 50vw;
+}
+.Your-cart{
+    border-bottom:0.1vw rgb(182, 179, 179) solid;
+    flex: 1;
+    border-radius: 0.5vw;
+}
+.item-cart{
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    height: 10vw;
+    border: 1px black solid;
+        border-radius: 0.5vw;
+    }
+
+.name-cart{
+flex: 1;
+}
+.price-cart{
+flex: 1;
+}
+.img-cart{
+width: 10vw;
+height: 9.9vw;
+box-sizing: border-box;
+}
