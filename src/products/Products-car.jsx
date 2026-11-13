@@ -1,9 +1,11 @@
 import { faDove } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import "./Car";
-
+import { useContext } from "react";
+import { CartContext } from "../Cart management/Cart-management";
 function ProductsCar(props) {
-  fetch("http://localhost/shop-api/products.php")
+  const { addToCart } = useContext(CartContext);
+  fetch("http://localhost:3000/products")
     .then((response) => {
       return response.json();
     })
@@ -46,6 +48,7 @@ console.log("Products:", products);
               <p href="#" className="price-text">
                 {product.price}
               </p>
+              <button  onClick={() => addToCart(product)} className="Add-to-cart">Add to cart</button>
             </div>
           </div>
         );
